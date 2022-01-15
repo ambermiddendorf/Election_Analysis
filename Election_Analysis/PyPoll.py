@@ -1,10 +1,13 @@
 # Add our dependencies.
 import csv
 import os
+
 # Assign a variable to load a file from a path.
-file_to_load = os.path.join("Resources", "election_results.csv")
+file_to_load = "C:/Users/amber/Classwork/Election_Analysis/Resources/election_results.csv"
+#file_to_load = os.path.join("Resources", "election_results.csv")
 # Assign a variable to save the file to a path.
-file_to_save = os.path.join("analysis", "election_analysis.txt")
+file_to_save = "C:/Users/amber/Classwork/Election_Analysis/analysis/election_analysis.txt"
+#file_to_save = os.path.join("analysis", "election_analysis.txt")
 #Initialize the vote counter, candidate options list, & candidate_votes dictionary.
 total_votes=0
 candidate_options=[]
@@ -50,11 +53,13 @@ with open(file_to_save, "w") as txt_file:
         f'\nElection Results\n'
         f'--------------------------\n'
         f'Total Votes: {total_votes:,}\n'
-        f'---------------------------\n'
-        f'County Votes: \n')
+        f'---------------------------\n')
+
     print(election_results, end="")
-    #Save the final vote count to the text file.
+#Save the final vote count to the text file.
     txt_file.write(election_results)
+    txt_file.write("County Votes: \n")
+    print("County Votes: ")
 
     for county_name in county_votes:
 #retrieve votes counts per county.
