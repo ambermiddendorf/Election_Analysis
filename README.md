@@ -28,8 +28,10 @@ The challenge presented was to add county voting results to the analysis. It was
 
 To the for loop where I was already finding the candidate names and votes, I added a line to count county votes after an if statement to collect the unique county names. I then wrote those results to the election_analysis.txt file. The indenting of each block of code was my biggest issue in this challenge.  
 
+This code could be used for other elections either by changing the file the code is pointing to or moving a new "election_results.csv" file to the Resources folder and moving the old one. This code could be used to easily report results election after election. 
+
 ## Challenge Summary
-From the data provide, the following was found:
+From the data provide, the following county level results were found:
 
 County Votes: 
 
